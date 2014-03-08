@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <!--<link rel="shortcut icon" href="../../assets/ico/favicon.ico"> -->
+
+        <title>Austin Longo</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom styles for this template -->
+        <link href="jumbotron.css" rel="stylesheet">
+    </head>
+
+    <body> 
+        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Austin Longo</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">                        
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <!--
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li class="dropdown-header">Nav header</li>
+                                <li><a href="#">Separated link</a></li>
+                                <li><a href="#">One more separated link</a></li>
+                            </ul>
+                        </li>
+                    -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main jumbotron -->
+        <div class="jumbotron">
+            <div class="container">
+            	{% if name %}
+  				<h1>Austin Longo welcomes you, {{ name }}!</h1>
+				{% else %}
+				  <h1>Austin Longo</h1>
+				{% endif %}               
+                <p>
+                    Programmer<br>
+                    Entrepreneur<br>
+                    Gamer<br>
+                    Super Awesome Computer Science Guy<br>
+                </p>
+
+                <br>
+                <div class="btn-toolbar">
+                    <section id="main">
+                        <div class="col-xs-2 col-xs-offset-1">                            
+                            <a class="btn btn-success btn-lg btn-block" role="button">Work Experience</a>
+                        </div>
+                        <div class="col-xs-2">
+                            <a class="btn btn-success btn-lg btn-block" role="button">Education</a>
+                        </div>
+                        <div class="col-xs-2">
+                            <a class="btn btn-success btn-lg btn-block" role="button">Resume</a>
+                        </div>
+                        <div class="col-xs-2">
+                            <a class="btn btn-success btn-lg btn-block" role="button">Personal Info</a>
+                        </div>
+                        <div class="col-xs-2">
+                            <a class="btn btn-success btn-lg btn-block" role="button">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Below Jumbotron, about me and picture -->
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4">
+                    <img src="http://austinlongo.com/Personal_Photo.jpg" class="img-responsive">
+                </div>
+                <div class="col-xs-8 well">
+                    <h2>About Me</h2>
+                    <p> I am a senior at The University of Colorado (at) Boulder pursuing a BS in Computer Science through the College of Engineering and Applied Sciences. My degree focus has been on networked devices and systems. </p>
+
+                    <p>I have been working at the Laboratory for Atmospheric and Space Physics (LASP) as a Command Controller in the Mission Operations and Data Systems division since the summer of 2012. </p>
+                    <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
+                </div>
+            </div>
+        </div> <!-- /container -->
+
+
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    </body>
+</html>
